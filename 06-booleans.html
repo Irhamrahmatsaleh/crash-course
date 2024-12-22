@@ -9,24 +9,50 @@
 
 <body>
   <script>
-    console.log(3 > 5 - 5);
-    console.log(5 != '5.00'); // testing
+    // console.log(3 > 5 - 5);
+    // console.log(5 != '5.00'); // testing
 
-    if (true) {
-      console.log('hello');
-    } else {
-      console.log('else');
-    }
+    // if (true) {
+    //   console.log('hello');
+    // } else {
+    //   console.log('else');
+    // }
 
-    const age = 15;
+    // const age = 15;
 
-    if (age >= 16) {
-      console.log('You can drive')
-    } else if (age >= 14) {
-      console.log('almost there!')
-    } else {
-      console.log('You can not drive');
-    }
+    // if (age >= 16) {
+    //   console.log('You can drive')
+    // } else if (age >= 14) {
+    //   console.log('almost there!')
+    // } else {
+    //   console.log('You can not drive');
+    // }
+    /*
+        if (0) {
+          console.log('truthy')
+        }
+
+        const cartQuantity = 5;
+        if (cartQuantity) {
+          console.log('cart has products');
+        }
+
+        const variable1 = undefined;
+        console.log(!0);
+        console.log('text' / 5)
+        console.log(variable1);
+    */
+
+    const result = 1 ? 'truthy' : 'falsy';
+    console.log(result);
+
+    false && console.log('hello');
+
+    const message = 1 && 'hello';
+    console.log(message);
+
+    const currency = undefined || 'EUR';
+    console.log(currency);
   </script>
 </body>
 
