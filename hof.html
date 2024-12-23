@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HOF</title>
+</head>
+
+<body>
+  <h1>Higher Order Functions</h1>
+  <script>
+    const numbers = [1, 2, 3, 4, 5];
+    const doubledNumbers = numbers.map(function (number) {
+      return number * 2;
+    });
+    console.log(doubledNumbers);
+
+    const products = [
+      { name: 'socks', price: 1090 },
+      { name: 'shoes', price: 5990 },
+      { name: 't-shirt', price: 3990 }
+    ];
+    const saleProducts = products.map(function (product) {
+      return {
+        name: product.name,
+        price: product.price / 2
+      };
+    });
+    console.log(saleProducts);
+  </script>
+</body>
+
+</html>
