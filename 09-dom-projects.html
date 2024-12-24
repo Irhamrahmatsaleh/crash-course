@@ -9,17 +9,17 @@
 
 <body>
   <p>YouTube Subscribe Button</p>
-  <button onclick="
+  <button class="js-subscribe-button" onclick="subscribe()">Subscribe</button>
+  <script>
     const buttonElement = document.querySelector('.js-subscribe-button');
 
-    if (buttonElement.textContent === 'Subscribe') {
-      buttonElement.textContent = 'Subscribed';
-    } else {
-      buttonElement.textContent = 'Subscribe';
+    function subscribe() {
+      if (buttonElement.textContent === 'Subscribe') {
+        buttonElement.textContent = 'Subscribed';
+      } else {
+        buttonElement.textContent = 'Subscribe';
+      }
     }
-  " class="js-subscribe-button">Subscribe</button>
-  <script>
-
   </script>
 </body>
 
